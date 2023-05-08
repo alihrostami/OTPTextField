@@ -140,7 +140,6 @@ class _OtpTextFieldState extends State<OtpTextField> {
         showCursor: widget.showCursor,
         keyboardType: widget.keyboardType,
         textAlign: TextAlign.center,
-        maxLength: 1,
         readOnly: widget.readOnly,
         style: style ?? widget.textStyle,
         autofocus: widget.autoFocus,
@@ -152,7 +151,6 @@ class _OtpTextFieldState extends State<OtpTextField> {
         decoration: widget.hasCustomInputDecoration
             ? widget.decoration
             : InputDecoration(
-                counterText: "",
                 filled: widget.filled,
                 fillColor: widget.fillColor,
                 focusedBorder: widget.showFieldAsBox
