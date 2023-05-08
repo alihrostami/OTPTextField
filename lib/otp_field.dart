@@ -40,7 +40,7 @@ class OtpTextField extends StatefulWidget {
   final InputDecoration? decoration;
   final List<TextStyle?> styles;
   final List<TextInputFormatter>? inputFormatters;
-  final String obscuringCharacter = '*';
+  final String obscuringCharacter ;
 
   OtpTextField({
     this.showCursor = true,
@@ -72,7 +72,7 @@ class OtpTextField extends StatefulWidget {
     this.readOnly = false,
     this.decoration,
     this.onCodeChanged,
-    this.obscuringCharacter,
+    this.obscuringCharacter= '*',
     this.borderRadius = const BorderRadius.all(Radius.circular(4.0)),
     this.inputFormatters,
   })  : assert(numberOfFields > 0),
