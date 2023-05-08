@@ -152,6 +152,7 @@ class _OtpTextFieldState extends State<OtpTextField> {
         decoration: widget.hasCustomInputDecoration
             ? widget.decoration
             : InputDecoration(
+                counterText: "",
                 filled: widget.filled,
                 fillColor: widget.fillColor,
                 focusedBorder: widget.showFieldAsBox
